@@ -1,0 +1,189 @@
+article{
+    background-color: $color-background;
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 10px;
+    
+    font-family: $font-title;
+}
+
+.rest{
+    @include bbox-shadow-main;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    
+
+    & img{
+        object-fit:cover;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        width: 100%;
+        height: 180px;
+    }
+    
+    & p{
+        text-align: end;
+        margin: auto;
+        background-color: $color-tertiary;
+        padding: 5px 15px;
+        position: relative;
+        bottom:165px;
+        border-radius: 4px;
+        margin-right: 15px;
+        font-family: $font-title;
+        font-weight: 700;
+        color: darken($color-tertiary, $amount: 40);
+        margin-bottom: -28px;
+    }
+    
+    
+
+    
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    
+    & a{
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+
+    &_write{
+
+        
+
+   
+        & h3{
+          
+          font-family: $font-title;
+          margin-top: 20px;
+          margin-bottom: 6px;
+          
+          
+        }
+        & h4{
+            margin-top: -3px;
+            font-family: $font-light;
+            font-size: 17px;
+        }
+
+
+    }
+   
+
+    & .heart-empty{
+        padding-top: 30px;
+        margin-right: 40px;
+       
+    
+        }
+
+    
+    
+    & .heart-color1{
+        position: relative;
+        right: 15px;
+        bottom:26px;
+        opacity: calc(0); 
+        transform: scale(0.5);
+        display: block;
+        transition-property: transform;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in;
+        background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
+        -webkit-background-clip: text;
+        background-clip:text;
+        -webkit-text-fill-color:transparent;
+        padding: 15px;
+        &:hover{
+                
+            cursor:pointer;
+            opacity: calc(1);
+            transform: scale(1);
+            
+          
+        }
+    }
+
+    & .heart-color2{
+          position: relative;
+           right: 15px;
+           bottom:25px;
+            opacity: calc(0); 
+            transform: scale(0.5);
+            display: block;
+            transition-property: transform;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in;
+            background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
+            -webkit-background-clip: text;
+            background-clip:text;
+            -webkit-text-fill-color:transparent;
+            padding: 15px;
+            &:hover{
+                    
+                cursor:pointer;
+                opacity: calc(1);
+                transform: scale(1);
+              
+            } 
+        }     
+        & .heart-color3{
+            position: relative;
+            right: 15px;
+            bottom:25px;
+            opacity: calc(0); 
+            transform: scale(0.5);
+            display: block;
+            transition-property: transform;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in;
+            background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
+            -webkit-background-clip: text;
+            background-clip:text;
+            -webkit-text-fill-color:transparent;
+            padding: 15px;
+            &:hover{
+                    
+                cursor:pointer;
+                opacity: calc(1);
+                transform: scale(1);
+              
+            } 
+        }  
+        & .heart-color4{
+            position: relative;
+            right: 15px;
+            bottom:25px;
+            opacity: calc(0); 
+            transform: scale(0.5);
+            display: block;
+            transition-property: transform;
+            transition-duration: 300ms;
+            transform-origin: center;
+            transition-timing-function: ease-in;
+            background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
+            -webkit-background-clip: text;
+            background-clip:text;
+            -webkit-text-fill-color:transparent;
+            padding: 15px;
+            &:hover{
+                    
+                cursor:pointer;
+                opacity: calc(1);
+                transform: scale(1);
+              
+            } 
+        }  
+    }

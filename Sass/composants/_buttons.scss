@@ -1,0 +1,14 @@
+/*---------bouton dégradé -------*/
+.explore{
+    &_btn{
+        text-align: center;
+    
+        & a{
+            @include btn_core;
+           
+            
+           
+        }
+    }
+}
+
